@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows:   3fr;
+  grid-gap: 1em;
+}
+
+header, footer {
+  grid-column: 1 / 4;
+}
+
+header, aside, article, footer {
+  border: solid 1px;
+
+}
