@@ -1,15 +1,25 @@
-body {
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-rows:   3fr;
-  grid-gap: 1em;
-}
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    height: calc(100% - 140px);
+  }
 
-header, footer {
-  grid-column: 1 / 4;
-}
+  main > nav {
+    order: 1;
+  }
 
-header, aside, article, footer {
-  border: solid 1px;
+  main > section {
+    order: 2;
+  }
 
+  main > aside {
+    order: 3;
+  }
+
+  .centered {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
 }

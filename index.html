@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie">
     <title>Holy Grail Layout</title>
-    <!-- <link rel="stylesheet" type="text/css" href="style/reset.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="style/float.css" /> -->
-    <link rel="stylesheet" type="text/css" href="style/flex.css" />
-    <link rel="stylesheet" type="text/css" href="style/grid.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/core.css" />
+    <link rel="stylesheet" href="style/float.css" />
+    <!-- <link rel="stylesheet" href="style/flex.css" /> -->
+    <!-- <link rel="stylesheet" href="style/grid.css" /> -->
   </head>
+
   <body>
     <header>
-      header
+      <h1>header</h1>
     </header>
-
-    <aside class="left">
-      left
-    </aside>
-  
-    <article>
-      content
-    </article>
-  
-    <aside class="right">
-      right
-    </aside>
-    
-    <footer>
-      footer
-    </footer>
+    <main>
+      <section class="centered">
+        <div>
+          <p>content</p>
+        </div>
+      </section>
+      <nav class="centered">
+        <div>left</div>
+      </nav>
+      <aside class="centered">
+        <div>right</div>
+      </aside>
+    </main>
+    <footer>footer</footer>
   </body>
 </html>
