@@ -2,17 +2,15 @@
   box-sizing: border-box;
 }
 
-html, 
-body {
+html, body {
   height: 100%;
 }
 
 body > * {
-  border: 1px solid #111;
+  border: 1px solid #000;
 }
 
-body > header, 
-body > footer {
+body > header, body > footer {
   background: #444;
   color: #eee;
   height: 70px;
@@ -24,8 +22,8 @@ main {
   background: #fafafa;
 }
 
-main > section {
-  background: #ccc;
+main > .content {
+  background: #000;
 }
 
 main > aside {
@@ -34,4 +32,19 @@ main > aside {
 
 main > nav {
   background: #ff0000;
+}
+
+.deck {
+  background: #0FA0CE;
+}
+
+.deck:first-child {
+  border-bottom:1px solid black;
+}
+
+.centeredWords {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

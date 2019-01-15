@@ -1,23 +1,26 @@
-@media (min-width: 600px) {
+@media (min-width: 960px) {
   main {
     overflow: hidden;
+    height: calc(100% - 140px);
   }
 
-  main > section {
+  main > .content {
     height: 100%;
-    float: left;
-    width: calc(100% - 300px);
   }
 
   main > nav {
     float: left;
     height: 100%;
-    width: 150px;
+    width: 250px;
   }
 
   main > aside {
     float: right;
     height: 100%;
-    width: 150px;
+    width: 250px;
+  }
+
+  .deck {
+    height: 50%;
   }
 }

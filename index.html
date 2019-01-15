@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie">
     <title>Holy Grail Layout</title>
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/core.css" />
-    <link rel="stylesheet" href="style/float.css" />
+    <!-- <link rel="stylesheet" href="style/float.css" /> -->
     <!-- <link rel="stylesheet" href="style/flex.css" /> -->
-    <!-- <link rel="stylesheet" href="style/grid.css" /> -->
+    <link rel="stylesheet" href="style/grid.css" />
   </head>
 
   <body>
-    <header>
+    <header class="centerWords">
       <h1>header</h1>
     </header>
+
     <main>
-      <section class="centered">
-        <div>
-          <p>content</p>
-        </div>
-      </section>
-      <nav class="centered">
-        <div>left</div>
-      </nav>
-      <aside class="centered">
-        <div>right</div>
-      </aside>
-    </main>
-    <footer>footer</footer>
+
+      <nav class="centerWords"><span>Side Nav</span></nav>
+
+      <aside class="centerWords"><span>Sidebar</span></aside>
+
+      <div class="content">
+        <section class="deck">
+          <div class="card centerWords">
+            <p>Content</p>
+          </div>
+        </section>
+      </div>
+
+      </main>
+
+      <footer class="centerWords">
+        &copy; 2019
+      </footer>
   </body>
 </html>
