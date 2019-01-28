@@ -7,7 +7,7 @@ html, body {
 }
 
 body > * {
-  border: 1px solid #000;
+  border: 1px solid #111;
 }
 
 body > header, body > footer {
@@ -22,8 +22,8 @@ main {
   background: #fafafa;
 }
 
-main > .content {
-  background: #000;
+main > section {
+  background: #ccc;
 }
 
 main > aside {
@@ -32,19 +32,4 @@ main > aside {
 
 main > nav {
   background: #ff0000;
-}
-
-.deck {
-  background: #0FA0CE;
-}
-
-.deck:first-child {
-  border-bottom:1px solid black;
-}
-
-.centeredWords {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

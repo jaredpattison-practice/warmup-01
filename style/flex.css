@@ -1,62 +1,33 @@
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-main > nav {
-  order: 2;
-}
-
-main > .content {
-  order:1;
-}
-
-main > aside {
-  order: 3;
-}
-
-@media ( min-width: 960px) {
-
+@media ( min-width: 600px) {
   body {
     display: flex;
     flex-direction: column;
   }
-  
+
   main {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    flex: 1;
+  }
+
+  main > nav {
+    order: 1;
+    width: 150px;
+  }
+
+  main > section {
+    flex: 1;
+    order: 2;
   }
 
   main > aside {
     order: 3;
-    width: 250px;
+    width: 150px;
   }
 
-  main > nav {
-    order: 2;
-    width: 250px;
-  }
-
-  main > .content {
+  .centered {
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    order: 2;
+    justify-content: center;
+    align-items: center;
   }
-
-  .deck {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex:1;
-    justify-content: space-between;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
 }
