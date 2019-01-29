@@ -1,0 +1,33 @@
+@media ( min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+  main > nav {
+    order: 1;
+    width: 150px;
+  }
+
+  main > section {
+    flex: 1;
+    order: 2;
+  }
+
+  main > aside {
+    order: 3;
+    width: 150px;
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
